@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Bazar - Don Flores</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Don Flores - Articulos varios</h1>
+    </header>
+    <nav class="menu">
+        <div class="menu-contenedor">
+            <ul class="menu-flex">
+                <li><a href="./index.html">Nuestra pagina principal</a></li>
+                <li><a href="./compras.html">Compra de articulos</a></li>
+                <li><a href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjB1_SA6OCFAxXRlJUCHfqeBWYQPAgJ"
+                        target="_blank">Ir al buscador Google</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="principal">
+        <article class="contenido-principal">
+            <h2>FUNDADO, Y FUNCIONANDO DESDE EL AÑO 1998;</h2>
+            <div class="principal-icono">
+                <img src="./imagenes/estrella.svg" alt="">
+                <p>
+                    Nuestro bazar se ha destacado por ofrecer una selección diversa y de alta calidad de artesanías
+                    locales, textiles, joyería artesanal y artículos de decoración. Cada producto es cuidadosamente
+                    elegido para garantizar autenticidad y excelencia, apoyando a artesanos locales y fomentando
+                    prácticas comerciales sostenibles. Visítenos para descubrir piezas únicas que enriquecen su hogar y
+                    su vida, combinando tradición y estilo contemporáneo.
+                </p>
+            </div>
+        </article>
+    </section>
+</body>
+<main class="contenedor sombra">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <h1>Ofertas Especiales de Don Flores</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="imagenes/cubiertos.jpg" alt="cubiertos"></td>
+                    <td>Cubiertos de acero inoxidable</td>
+                    <td>Hechos a mano por industrias locales.</td>
+                    <td>AR$20.000 por juego</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/repasadores.jpg" alt="repasadores"></td>
+                    <td>Repasadores</td>
+                    <td>Tejido de alta calidad y colores vibrantes.</td>
+                    <td>AR$2.000 por unidad</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/vasos.jpg" alt="vasos"></td>
+                    <td>Vasos</td>
+                    <td>Recipientes de mesa.</td>
+                    <td>AR$6.000 por grupos de 4</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/platos.jpg" alt="platos"></td>
+                    <td>Vajillas de ceramica</td>
+                    <td>Cerámica moderna pintada a mano.</td>
+                    <td>AR$30.000 por juego</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <h2>Seleccione sus productos favoritos</h2>
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto">
+                <option value="cubiertos">1. Cubiertos de acero inoxidable</option>
+                <option value="repasadores">2. Repasadores</option>
+                <option value="vasos">3. Recipientes de mesa</option>
+                <option value="platos">4. Vajillas de ceramica</option>
+            </select>
+        </form>
+        
+            <h2>Complete su informacion</h2>
+            <form action="mailto:info@business.com" method="post">
+                <fieldset>
+                    <legend>Por favor, complete todos los datos.</legend>
+                    <table>
+                        <tr>
+                            <td><label for="nombre">NOMBRE: *</label></td>
+                            <td><input class="input-text" type="text" id="nombre" name="nombre"
+                                    placeholder="Escriba su nombre" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="direccion">DIRECCION</label></td>
+                            <td><input class="input-text" type="text" id="direccion" name="direccion"
+                                    placeholder="Escriba su dirección"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telefono">TELÉFONO</label></td>
+                            <td><input class="input-text" type="tel" id="telefono" name="telefono"
+                                    placeholder="Sin 0 y sin 15"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">MAIL</label></td>
+                            <td><input class="input-text" type="email" id="email" name="email"
+                                    placeholder="usuario@servidor.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="localidad">LOCALIDAD</label></td>
+                            <td><input class="input-text" type="text" id="localidad" name="localidad"
+                                    placeholder="Escriba su localidad" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="provincia">PROVINCIA</label></td>
+                            <td><input class="input-text" type="text" id="provincia" name="provincia"
+                                    placeholder="Escriba su provincia"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sexo">SEXO</label></td>
+                            <td>
+                                <input class="input-text" type="radio" id="sexo" name="sexo"
+                                    value="Masculino">Masculino
+                                <input class="input-text" type="radio" id="sexo" name="sexo"
+                                    value="Femenino">Femenino
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="formapago">FORMA DE PAGO</label></td>
+                            <td>
+                                <select class="input-text" id="formapago" name="formapago">
+                                    <option value="">Tarjeta</option>
+                                    <option value="">Depósito Bancario</option>
+                                    <option value="">Rapipago / Pago Fácil</option>
+                                </select>
+                            </td>
+                        </tr>
+
+
+
+                        
+                    </table>
+                    <h3>Comentarios</h3>
+                        <textarea id="comentarios" name="comentarios"
+                            placeholder="Escriba sus comentarios aquí..."></textarea>
+
+                        <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Restablecer</button>
+            
+
+</main>
+
+
+<footer>
+    <p>Don Flores - Todos los derechos reservados - 2024</p>
+</footer>
+</body>
+
+</html>
